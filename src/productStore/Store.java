@@ -7,12 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Store {
-    private  List<Product> products=new ArrayList<>();
-    private  List<Product>discounts=new ArrayList<>();
+    private List<Product> products = new ArrayList<>();
+    private  List<Product> discounts = new ArrayList<>();
 
-    public Store(List<Product> products, List<Product> discounts,Manager manager) {
+    public Store(List<Product> products) {
         this.products = products;
-        this.discounts = discounts;
+
+    }
+
+    public Store() {
     }
 
     public List<Product> getProducts() {
@@ -26,11 +29,10 @@ public class Store {
     public List<Product> getDiscounts() {
         return discounts;
     }
+
     public void setDiscounts(List<Product> discounts) {
         this.discounts = discounts;
     }
-
-
 
     @Override
     public String toString() {

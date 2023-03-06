@@ -10,3 +10,5 @@ public abstract class DairyAbs extends Product {
         super(id,name, company, date);
     }
 }
+
+
